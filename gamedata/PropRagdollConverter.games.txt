@@ -1,0 +1,53 @@
+"Games"
+{
+    "csgo"
+    {
+        "Signatures"
+        {
+            "CCSPlayer::Event_Killed"
+            {
+                "library"   "server"
+                "linux"     "\x55\x89\xE5\x57\x56\x53\x81\xEC\x0C\x0D\x00\x00"
+            }
+            "CCSPlayer::CreateRagdollEntity"
+            {
+                "library"   "server"
+                "linux"     "\x55\x89\xE5\x57\x56\x53\x83\xEC\x4C\x8B\x75\x08\x8B\x0D\x2A\x2A\x2A\x2A\x8B\x86\x7C\x28\x00\x00"
+            }
+            "CBaseEntity::RemoveDeferred"
+            {
+                "library"   "server"
+                "linux"     "\x55\x89\xE5\x53\x8D\x45\xF0\x83\xEC\x34\x8B\x5D\x08\x89\x04\x24\xC7\x44\x24\x14\x00\x00\x00\x00\xC7\x44\x24\x10\x00\x00\x00\x00\xC7\x44\x24\x08\x2A\x2A\x2A\x2A\x89\x5C\x24\x04\xC7\x44\x24\x0C\x00\x00\x00\x00\xE8\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x83\xEC\x04\xF3\x0F\x10\x05\x2A\x2A\x2A\x2A\xC7\x44\x24\x08\x00\x00\x00\x00\xF3\x0F\x58\x40\x10\x89\x1C\x24\xF3\x0F\x11\x44\x24\x04\xE8\x2A\x2A\x2A\x2A\x89\x1C\x24"
+            }
+            "CreateServerRagdoll"
+            {
+                "library"   "server"
+                "linux"     "\x55\x89\xE5\x57\x56\x53\x81\xEC\xCC\x62\x00\x00"
+            }
+        }
+        "Functions"
+        {
+            "CCSPlayer::Event_Killed"
+            {
+                "signature"     "CCSPlayer::Event_Killed"
+                "callconv"      "thiscall"
+                "return"        "void"
+                "this"          "entity"
+                "arguments"
+                {
+                    "info"
+                    {
+                        "type"  "int"
+                    }
+                }
+            }
+            "CCSPlayer::CreateRagdollEntity"
+            {
+                "signature"     "CCSPlayer::CreateRagdollEntity"
+                "callconv"      "thiscall"
+                "return"        "void"
+                "this"          "entity"
+            }
+        }
+    }
+}
