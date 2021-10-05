@@ -4,7 +4,7 @@
 #include <dhooks>
 
 #undef REQUIRE_PLUGIN
-#include <zombiereloaded>
+#tryinclude <zombiereloaded>
 #define REQUIRE_PLUGIN
 
 #pragma semicolon 1
